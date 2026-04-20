@@ -416,7 +416,8 @@ footer{
     }
     footer{
         div{
-            flex-wrap: wrap
+            flex-wrap: wrap;
+            gap: 40px;
         }
     }
 }
