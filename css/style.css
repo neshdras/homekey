@@ -2,6 +2,7 @@
 *{
     margin: 0;
     font-family: 'Open Sans', regular;
+    scroll-behavior: smooth;
 }
 /* liste des couleur les plus utilisé */
 :root{
@@ -416,8 +417,10 @@ footer div a:hover{
             div{
                 justify-content: center;
                 align-items: center;
+                padding: 0 24px;
                 article{
                     flex: none;
+                    width: 100%;
                 }
                 .accomodation{
                     flex: none;
