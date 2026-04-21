@@ -36,6 +36,9 @@ header{
             }
             a:hover{
                 border-top: solid 1px var(--red);
+                color: var(--red);
+                padding-top: 70px;
+                transition: ease-in-out 0.3s;
             }
 
         }
@@ -61,7 +64,7 @@ header{
         gap: 20px;
     }
     .fa-city,.fa-mountain-sun,.fa-tree,.fa-water,.fa-circle-info{
-        color: var(--red);
+        color: var(--red);     
     }
     #inputsearch{
         padding: 7px;
@@ -96,6 +99,15 @@ header{
         padding: 10px;
         font-size: 16px;
     }
+    button:hover{
+        color: var(--white);
+        background-color: var(--red);
+        transition: ease-in-out 0.3s;
+        i{
+            color: var(--white);
+            transition: ease-in-out 0.3s;
+        }
+    }
     .filter{
         gap: 20px;
         align-items: center;
@@ -126,12 +138,17 @@ header{
         background-color: var(--lightgrey);
         border-radius: 12px;
         padding: 50px;
-        a:last-of-type{
+        #loadmore:last-of-type{
             color: var(--black);
             text-decoration: none;
             font-size: 18px;
             font-weight: 700;
+            &:hover{
+                color: var(--red);
+                transition: ease-in-out 0.3s;
+            }
         }
+
         div{
             display: flex;
             gap: 16px;
@@ -148,6 +165,7 @@ header{
                     color: var(--black);
                     text-decoration: none;
                     span{
+                        z-index: 1;
                         position: absolute;
                         top: 10px;
                         right: 12px;
@@ -210,6 +228,7 @@ header{
                         box-shadow: 0px 4px 4px 0px var(--shadow);
                         text-decoration: none;
                     span{
+                        z-index: 1;
                         position: absolute;
                         top: 10px;
                         left: 10px;
@@ -239,6 +258,12 @@ header{
             }
         }
     }
+}
+.accomodation > img:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.02);
+    filter: grayscale(100%);
+
 }
 /* Liste des activités */
 #list-activities{
@@ -273,6 +298,13 @@ header{
             height: 380px;
             object-fit: cover;
         }
+    }
+}
+#list-activities div a:hover{
+    img{
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+        filter: grayscale(100%);
     }
 }
 /* Footer de la page */
@@ -312,6 +344,10 @@ footer{
         padding: 40px;
     }
 }
+footer div a:hover{
+    color: var(--red);
+    transition: ease-in-out 0.3s;
+}
 
 /* Responsive Tablette */
 
@@ -340,6 +376,7 @@ footer{
     #list-activities{
         h2, div{
             margin: 0 15px;
+            justify-content: center;
         }
     }
 }
